@@ -74,7 +74,7 @@ public class AutoGuma {
 	 * @throws IllegalArgumentException ako se unese precnik koji je kraci od 13 a veci od 22
 	 */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 && precnik > 22)
+		if (precnik < 13 || precnik > 22)
 			throw new IllegalArgumentException("Precnik van opsega");
 		this.precnik = precnik;
 	}
